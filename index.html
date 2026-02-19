@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeHome | Premium Interior Decor</title>
+    <style>
+        /* Modern Minimalist CSS */
+        :root {
+            --primary: #2d3436;
+            --accent: #d4af37; /* Gold accent */
+            --light: #f9f9f9;
+            --text: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: #fff;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 70vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=1000');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            background: var(--accent);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #b8962d;
+        }
+
+        /* Features/Shop Grid */
+        .section-title {
+            text-align: center;
+            margin: 50px 0 30px;
+            font-size: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0 5%;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            background: var(--light);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">LuxeHome</div>
+        <div>
+            <a href="#" style="margin-right:20px; text-decoration:none; color:black;">Collections</a>
+            <a href="#" class="btn" style="padding: 8px 20px;">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Transform Your Living Space</h1>
+        <p>Curated home decor for the modern minimalist.</p>
+        <a href="#shop" class="btn">Explore Shop</a>
+    </header>
+
+    <h2 class="section-title" id="shop">New Arrivals</h2>
+    
+    <div class="grid">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=400" alt="Lamp">
+            <h3>Ambient Lighting</h3>
+            <p>$129.00</p>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&q=80&w=400" alt="Chair">
+            <h3>Nordic Seating</h3>
+            <p>$245.00</p>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&q=80&w=400" alt="Vase">
+            <h3>Artisan Vases</h3>
+            <p>$85.00</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 LuxeHome Decor. All Rights Reserved.</p>
+        <p style="font-size: 0.8rem; opacity: 0.7;">Ready for sale on Flippa Marketplace</p>
+    </footer>
+
+</body>
+</html>
+ok
